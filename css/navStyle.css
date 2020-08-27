@@ -59,13 +59,15 @@ header {
     content: url('../images/TFDP\ Nav\ Elements/search_green.svg');
 }
 
-button {
+.donateButton {
     font-family: "Open Sans", sans-serif;
     margin-left: 20px;
     font-weight: 500;
     font-size: 12px;
     color: #edf0f1;
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 80px;
     height: 40px;
     background-color: rgba(50, 157, 191, 1);
@@ -74,7 +76,7 @@ button {
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
-button:hover {
+.donateButton:hover {
     /*background: linear-gradient(180deg, #2F80ED 0%, #329DBF 81.77%);*/
     background-color: rgba(50, 157, 191, 0.8);
 }
