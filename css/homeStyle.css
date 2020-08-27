@@ -412,7 +412,7 @@ body {
     margin: 10px;
     padding-left: 100px;
     padding-bottom: 100px;
-    width: 500px;
+    width: 700px;
     font-size: 24px;
     display: inline-block;
    
@@ -502,4 +502,11 @@ body {
       "couches"
       "desks";
     }
+  }
+  #articleFlex {
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "categoryGrid1"
+    "categoryGrid2";
   }
