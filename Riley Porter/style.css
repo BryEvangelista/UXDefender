@@ -46,6 +46,7 @@
 
 
     
+    
     @media screen and (max-width:600px){
         .flexbox-item-1{
             order: 1;
@@ -67,5 +68,4 @@
 
 
 
-
-
+Do something with order after mediaaa 
