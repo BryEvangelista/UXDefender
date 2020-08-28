@@ -1,102 +1,71 @@
-
-/* Footer Styles */
-.footer {
-    font-family: Hiragino Sans;
-font-style: normal;
-    background-color: black;
-    font-size: 12pt;
-    padding-bottom: 30px;
-    list-style-type: none; 
-    width: 1440px;
-    height:500px;
-    }
-  
-.left-list {
-    justify-content: left;
-    margin: 10px;
-    padding-left: 100px;
-    padding-bottom: 100px;
-    width: 500px;
-    font-size: 24px;
-    display: inline-block;
-    
-  
-}
-.bottom-list {
-    justify-content: center;
-    margin: 0px;
-    padding-top: 350px; 
-    display: grid;
-    text-align: center;
-    font-size: 12px;
-    
-    
-}
-.social-media-bar {
-padding-left: 75px;
-display: flex;
-
-
-
-
-}
-
-.email-line{
-    justify-content: right;
-    margin: 10px;
-    padding-right: 100px;
-    padding-bottom: 225px;
-    font-size: 18px;
-    display:flex;
- 
-}
-
-.left-list, .bottom-list, .social-media-bar, .email-line { 
+.flexbox-container{
     color: white;
+    background-color: black;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height:600px;
     
-
-     
 }
- 
 
-    .footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: black;
-        height: 500px;
-    }
-   
-    #left-list, bottom-list, social-media-bar, email-line {
+
+
+
+.flexbox-item{
+    width: 200px;
+    margin:10px;
+    border:3px solid black;
+        list-style: none;
         
-        display: grid;
-        grid-template-rows: 300px 300px 300px;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-        "left-list email-list "
-        "bottom-list social-media-bar"
-    }
-  
-@media only screen and (min-width:600px){
-    left-list bottom-list social-media-bar email-line  {
-        display: flex;
-    flex-direction: row-reverse;
-     
-
-    }
-}
-@media only screen and (max-widith:600px){
-    left-list bottom-list social-media-bar email-line {
-        display: flex;
-        flex-direction: column-reverse;
     
-    }
 }
-left-list, bottom-list, social-media-bar, email-line { 
-    flex-grow:1;
+
+.flexbox-item-1{
+    min-height: 200px;
+    font-size: 30px;
+    padding-top:0px;
+    width: 300px;
+    
+    
+}
+.flexbox-item-2{
+    min-height:100px;
+    align-self: flex-end;
+    font-size: 12px;
+    width: 300px;
+    align-content: center;
+}
+.flexbox-item-3{
+    padding-top: 0px;
+    min-height: 200px;
+    font-size: 18px;
+    width:500px;
+}
 
 
-}
+    
+    
+    @media screen and (max-width:600px){
+        .flexbox-item-1{
+            order: 1;
+            font-size: 24px;
+        }
+        .flexbox-item-2{
+            order: 3;
+            font-size: 12px;
+        }
+      .flexbox-item-3{
+      order: 2;
+      padding:20px;
+      min-height: 150px;
+      }
+      .flexbox-container{
+          padding: 10px;  
+      }
+        }
+
 
 
 
