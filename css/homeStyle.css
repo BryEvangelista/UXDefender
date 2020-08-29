@@ -6,7 +6,7 @@ body {
   
   
   /* Category Grid CSS */
-  #heroGrid {
+  /*#heroGrid {
     margin: 0px 0%;
     display: grid;
     min-height: 1000px;
@@ -16,7 +16,7 @@ body {
     grid-template-areas:
       "featuredProduct featuredProduct"
       "featuredProduct featuredProduct"
-  }
+  
   #featuredProduct {
     grid-area: featuredProduct;
     background-image: url('../images/TFDP\ Home\ Elements\ /hero_pic_01.svg');
@@ -30,19 +30,40 @@ body {
     display: flex;
     position: relative;
   
+  }}*/
+
+  .heroSlide {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  .getButton {
+    position: absolute;
+    bottom: 4em;
+    right: 4em;
+    top: 700px;
+    right: 640px;
+    z-index: 100;
+    max-width: 100%;
+  
   }
   #headline {
     /*display: flex;
     justify-content: center;
     align-content: flex-end;*/
+  
+    margin: 0px 50%;
     position: absolute;
-    top: 700px;
-    left: 680px;
+    /*top: 700px;
+    right: 640px;*/
     z-index: 100;
     max-width: 100%;
     cursor: pointer;
   }
   #getBox {
+    position: absolute;
     font-family: "Open Sans", sans-serif;
     margin-left: 20px;
     font-weight: 700;
@@ -483,12 +504,17 @@ body {
     .icons {
       margin-left: auto;
     }
-  }
-  
-  @media only screen and (max-width: 600px) {
     #headline {
       position: static;
-      margin: 20px;
+      margin: 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    #headline {
+      position: static;
+      margin: 25%;
+  
     }
     #heroGrid {
       grid-template-areas: 
@@ -507,10 +533,14 @@ body {
       "desks";
     }
   }
-  #articleFlex {
-    grid-template-rows: 300px 300px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "categoryGrid1"
-    "categoryGrid2";
+  @media only screen and (max-width: 900px) {
+    #articleFlex {
+      display: flex;
+      flex-direction: column;
+      /*grid-template-rows: 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+      "categoryGrid1"
+      "categoryGrid2";*/
+    }
   }
