@@ -1,0 +1,370 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.singlestaffcard{
+    width: 200px;
+
+}
+#navBar {
+    /*display: flex;
+    flex-direction: row;
+    background-color: #636364;
+    margin: 0px 5%;*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #000000;
+  
+  }
+  
+  #navigation {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+  #navigation li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  #navigation li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: white;
+}
+
+  #navigation li a:hover {
+    color: #329DBF;
+  }
+  .logo {
+    cursor: pointer;
+    margin-right: auto;
+  }
+
+  li, a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #edf0f1;
+    text-decoration: none;
+    background-color: #000000;
+  }
+  a {
+    /* transition: all .5s; */
+    text-decoration: none;
+    color: white;
+}
+
+  .nav__links {
+    list-style: none;
+    background-color: #000000;
+  }
+  .nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+  .nav__links li a {
+    transition: all 0.3s ease 0s;
+  }
+  .nav__links li a:hover {
+    color: #329DBF;
+  }
+  .search {
+    display: flex;
+    cursor: pointer;
+    padding: 0px 20px;
+    transition: all 0.3s ease 0s;
+    
+  
+  }
+  .search:hover {
+    content: url('../images/TFDP\ Nav\ Elements/search_green.svg');
+  }
+  
+  #donateBox {
+    font-family: "Open Sans", sans-serif;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    color: #edf0f1;
+    text-decoration: none;
+    width: 80px;
+    height: 40px;
+    background-color: rgba(50, 157, 191, 1);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /*transition: all 0.3s ease 0s;*/
+  }
+  #donateBox:hover {
+    background: linear-gradient(180deg, #2F80ED 0%, #329DBF 81.77%);
+    /*background-color: rgba(50, 157, 191, 0.8);*/
+  }
+  .donate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.attorneycontainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10%;
+    border: 1px solid lightgray
+}
+
+.attorneyimg{
+  width: 50%;
+  height: 50%;
+}
+.attorneyimg img{
+    height: 70vh;
+    width: 100%;
+}
+
+.attorneyinfo{
+    width: 50%;
+    padding: 20px;
+    position: relative;
+}
+a{ 
+    transition:  all .5s;
+    text-decoration: none;
+    color: black;
+}
+
+.img{
+    width: 100%; 
+    transition: all .5s;
+}
+
+
+section{
+    padding: 70px 0;
+    margin-top: 50px;
+    background: darkgray(116, 185, 2,0.09);
+    text-align: center;
+}
+
+header{
+      width: 50%;
+      margin: 0vw;
+    background-color: black;
+  
+}
+.hoverMe {
+    grid-area: hover;
+    display: inline-block;
+    background-color: rgb(5, 188, 212);
+    color: white;
+    width: 100px;
+    text-align: center;
+    height: 50px;
+    transition: 0.3s;
+    border-radius: 30px;
+    transition: all .5s;
+    margin-bottom: 15px;
+  }
+
+  .attorney-botton{
+    grid-area: hover;
+    display: inline-block;
+    background-color: rgb(5, 188, 212);
+    color: white;
+    width: 100px;
+    text-align: center;
+    height: 50px;
+    transition: 0.3s;
+    border-radius: 30px;
+    transition: all .5s;
+    margin-bottom: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+  }
+
+
+header h1{
+    margin: 0;
+    font-size: 48px;
+    font-weight: 500;
+    color: white;
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.attorney-p{
+    margin-bottom: 20%;
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin:  0 15px;
+}
+
+.singleattorneycard{
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 10px #ccc;
+    transition: all .5s;
+}
+
+.singlestaffcard{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #ccc;
+    transition: all .5s;
+}
+.attorneycontent h4{
+    font-size: 18px;
+    font-weight: 500;
+    float: right;
+
+}
+.cardcontent h4 span{
+    display: block;
+    font-size: 60%;
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.footer {
+    /*font-family: Hiragino Sans;
+    font-style: normal;*/
+    background-color: black;
+    font-size: 12pt;
+    padding-bottom: 30px;
+    list-style-type: none;
+    width: 100%;
+    height:500px;
+    }
+
+  .left-list {
+    justify-content: left;
+    margin: 10px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    width: 700px;
+    font-size: 24px;
+    display: inline-block;
+   
+  }
+ .bottom-list {
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0px;
+    padding-top: 350px;
+    display: grid;
+    
+    text-align: center;
+    font-size: 12px;
+   
+   
+ }
+ .social-media-bar {
+ display: flex;
+ justify-content: center;
+  
+ 
+ }
+  
+ .email-line{
+    justify-content: right;
+    margin: 10px;
+    padding-right: 100px;
+    padding-bottom: 225px;
+    width: 500px;
+    font-size: 18px;
+    display:flex;
+ }
+  
+ .left-list, .bottom-list, .social-media-bar, .email-line {
+    color: white;
+   
+  
+    
+ }
+  
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        height: 500px;
+    }
+  
+    #left-list, bottom-list, social-media-bar, email-line {
+       
+        display: grid;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "left-list email-list "
+        "bottom-list social-media-bar"
+    }
+ 
+
+  @media only screen and (max-width: 1000px) {
+    #navigation {
+      display: none;
+    }
+    .icons {
+      margin-left: auto;
+    }
+  }
+
+
+
+
+@media (max-width:992px) {
+    .grid-container{
+        grid-template-columns: 1fr 1fr ;
+       
+    }
+   
+}
+@media (max-width:767px) {
+   
+    .grid-container{
+        grid-template-columns: 1fr ;
+       
+    }
+    .attorneycontainer{
+        flex-direction: column;
+    }
+    .attorneyinfo{
+        width: 90%;
+    }
+    .attorneyimg{
+        width: 100%;
+    }
+}
+
+.cardcontent{
+    bottom: 0;
+}
+@media (max-width:500px) {
+    main{
+        grid-auto-columns: repeat(1, 1fr);
+    }
+
+
+    .attorneycontainer{
+        flex-direction: column;
+    }
+}
