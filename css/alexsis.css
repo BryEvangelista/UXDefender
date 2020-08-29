@@ -39,7 +39,10 @@ body{
   }
   #navigation li a {
     transition: all 0.3s ease 0s;
-  }
+    text-decoration: none;
+    color: white;
+}
+
   #navigation li a:hover {
     color: #329DBF;
   }
@@ -56,6 +59,12 @@ body{
     text-decoration: none;
     background-color: #000000;
   }
+  a {
+    /* transition: all .5s; */
+    text-decoration: none;
+    color: white;
+}
+
   .nav__links {
     list-style: none;
     background-color: #000000;
@@ -354,7 +363,6 @@ section{
         grid-auto-columns: repeat(1, 1fr);
     }
 
-  =
 
     .attorneycontainer{
         flex-direction: column;
