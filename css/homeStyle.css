@@ -1,5 +1,5 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
   }
   
   /* Grid CSS */
@@ -32,11 +32,14 @@ body {
   
   }
   #headline {
+    /*display: flex;
+    justify-content: center;
+    align-content: flex-end;*/
     position: absolute;
     top: 700px;
     left: 680px;
     z-index: 100;
-    max-width: 550px;
+    max-width: 100%;
     cursor: pointer;
   }
   #getBox {
@@ -85,7 +88,6 @@ body {
   
   }
   #categoryGrid1 {
-    /*margin: 0px 5%;*/
     display: grid;
     grid-template-rows: 100px 400px 100px;
     grid-template-columns: 300px 450px;
@@ -117,7 +119,6 @@ body {
   }
   
   #categoryGrid2 {
-    /*margin:  0px 0px 0px 5%;*/
     display: grid;
     grid-template-rows: 100px 400px 100px;
     grid-template-columns: 300px 450px;
@@ -205,9 +206,10 @@ body {
     justify-content: space-between;
     align-content: flex-end;
     height: 700px;
-    
   
   }
+
+  /*
   #categoryGrid {
       margin: 0px 5%;
       display: grid;
@@ -254,7 +256,8 @@ body {
     color: white;
     font-size: 18px;
     border-bottom: 5px solid #FF6200;
-  }
+  }*/
+
   /* Navigation CSS Start Here*/
   
   #navBar {
@@ -360,6 +363,7 @@ body {
   /* Typography CSS */
   
   h2 {
+    font-family: 'Poppins', sans-serif;
     font-size: 60px;
     margin: 0px 0px;
     
@@ -472,7 +476,7 @@ body {
     }
  
 
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 1250px) {
     #navigation {
       display: none;
     }
