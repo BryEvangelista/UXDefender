@@ -151,7 +151,7 @@ header {
   border-bottom-color: #F1D686;
   }
 
-  .flexbox-container {
+  .flexbox-container-staff  {
   display: flex; 
   direction: row;
   height: 800px;
@@ -204,3 +204,78 @@ header {
   .staffButton:hover {
   background-color: rgba(50, 157, 191, 0.8);
   }
+
+  .flexbox-container{
+    color: white;
+    background-color: black;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height:600px;
+    
+}
+
+
+
+
+.flexbox-item{
+    width: 200px;
+    margin:10px;
+    border:3px solid black;
+        list-style: none;
+        
+    
+}
+
+.flexbox-item-1{
+    min-height: 200px;
+    font-size: 30px;
+    padding-top:0px;
+    width: 300px;
+    
+    
+}
+.flexbox-item-2{
+    min-height:100px;
+    align-self: flex-end;
+    font-size: 12px;
+    width: 300px;
+    align-content: center;
+}
+.flexbox-item-3{
+    padding-top: 0px;
+    min-height: 200px;
+    font-size: 18px;
+    width:500px;
+}
+
+
+    
+    
+    @media screen and (max-width:600px){
+        .flexbox-item-1{
+            order: 1;
+            font-size: 24px;
+        }
+        .flexbox-item-2{
+            order: 3;
+            font-size: 12px;
+        }
+      .flexbox-item-3{
+      order: 2;
+      padding:20px;
+      min-height: 150px;
+      }
+      .flexbox-container{
+          padding: 10px;  
+      }
+    }
+
+
+
+
+
+
+  
