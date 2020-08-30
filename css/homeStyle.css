@@ -6,7 +6,7 @@ body {
   
   
   /* Category Grid CSS */
-  /*#heroGrid {
+  #heroGrid {
     margin: 0px 0%;
     display: grid;
     min-height: 1000px;
@@ -16,7 +16,8 @@ body {
     grid-template-areas:
       "featuredProduct featuredProduct"
       "featuredProduct featuredProduct"
-  
+  }
+
   #featuredProduct {
     grid-area: featuredProduct;
     background-image: url('../images/TFDP\ Home\ Elements\ /hero_pic_01.svg');
@@ -30,22 +31,28 @@ body {
     display: flex;
     position: relative;
   
-  }}*/
+  }
 
-  .heroSlide {
+  /*.heroSlide {
     position: relative;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .getButton {
+  #heroSlide img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }*/
+
+  #getButton {
     position: absolute;
-    bottom: 4em;
-    right: 4em;
     top: 700px;
     right: 640px;
-    z-index: 100;
+    z-index: 1;
     max-width: 100%;
   
   }
@@ -54,16 +61,16 @@ body {
     justify-content: center;
     align-content: flex-end;*/
   
-    margin: 0px 50%;
+    margin: 0px 0%;
     position: absolute;
-    /*top: 700px;
-    right: 640px;*/
+    top: 700px;
+    right: 640px;
     z-index: 100;
     max-width: 100%;
     cursor: pointer;
   }
   #getBox {
-    position: absolute;
+    position: relative;
     font-family: "Open Sans", sans-serif;
     margin-left: 20px;
     font-weight: 700;
@@ -421,9 +428,78 @@ body {
 
  
 /* Footer Styles */
-.footer {
-    /*font-family: Hiragino Sans;
-    font-style: normal;*/
+.flexbox-container{
+  color: white;
+  background-color: black;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  height:600px;
+  
+}
+
+
+
+
+.flexbox-item{
+  width: 200px;
+  margin:10px;
+  border:3px solid black;
+      list-style: none;
+      
+  
+}
+
+.flexbox-item-1{
+  min-height: 200px;
+  font-size: 30px;
+  padding-top:0px;
+  width: 300px;
+  
+  
+}
+.flexbox-item-2{
+  min-height:100px;
+  align-self: flex-end;
+  font-size: 12px;
+  width: 300px;
+  align-content: center;
+}
+.flexbox-item-3{
+  padding-top: 0px;
+  min-height: 200px;
+  font-size: 18px;
+  width:500px;
+}
+
+
+  
+  
+  @media screen and (max-width:600px){
+      .flexbox-item-1{
+          order: 1;
+          font-size: 24px;
+      }
+      .flexbox-item-2{
+          order: 3;
+          font-size: 12px;
+      }
+    .flexbox-item-3{
+    order: 2;
+    padding:20px;
+    min-height: 150px;
+    }
+    .flexbox-container{
+        padding: 10px;  
+    }
+      }
+
+
+/*.footer {
+    font-family: Hiragino Sans;
+    font-style: normal;
     background-color: black;
     font-size: 12pt;
     padding-bottom: 30px;
@@ -494,7 +570,7 @@ body {
         grid-template-areas:
         "left-list email-list "
         "bottom-list social-media-bar"
-    }
+    }*/
  
 
   @media only screen and (max-width: 1250px) {
@@ -504,24 +580,45 @@ body {
     .icons {
       margin-left: auto;
     }
-    #headline {
+    /*.heroSlide img {
       position: static;
-      margin: 50%;
+      margin: auto;
+      
     }
+    #getButton {
+      position: static;
+      margin: auto;
+    }*/
   }
   
   @media only screen and (max-width: 900px) {
     #headline {
       position: static;
-      margin: 25%;
+      margin: 20px;
+    }
+
+    .heroSlide {
+      position: static;
+      /*margin: 25%;*/
   
     }
-    #heroGrid {
-      grid-template-areas: 
-      "featuredProduct featuredProduct"
-      "featuredProduct featuredProduct";
+    #getButton {
+      position: static;
+      margin: auto;
     }
-    #categoryGrid {
+
+    #heroGrid {
+      grid-template-rows: 
+      1fr 1fr 1fr 1fr;
+      /*100px 100px 100px 100px;*/
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "featuredProduct" 
+      "featuredProduct"
+      "featuredProduct" 
+      "featuredProduct";
+    }
+    /*#categoryGrid {
       grid-template-rows: 
       300px 300px 300px 300px 300px;
       grid-template-columns: 1fr;
@@ -531,9 +628,10 @@ body {
       "patio"
       "couches"
       "desks";
-    }
+    }*/
+
   }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 600px) {
     #articleFlex {
       display: flex;
       flex-direction: column;
@@ -542,5 +640,9 @@ body {
       grid-template-areas:
       "categoryGrid1"
       "categoryGrid2";*/
+    }
+    #getButton {
+      position: static;
+      margin: auto;
     }
   }
