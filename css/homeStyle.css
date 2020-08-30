@@ -429,14 +429,14 @@ body {
  
 /* Footer Styles */
 .flexbox-container{
-  color: white;
+  /*color: white;*/
   background-color: black;
   display:flex;
   justify-content: space-around;
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  height:600px;
+  height:500px;
   
 }
 
@@ -457,6 +457,7 @@ body {
   font-size: 30px;
   padding-top:0px;
   width: 300px;
+  margin-bottom: 10%;
   
   
 }
@@ -465,19 +466,25 @@ body {
   align-self: flex-end;
   font-size: 12px;
   width: 300px;
-  align-content: center;
+  text-align: center;
+  justify-content: center;
 }
 .flexbox-item-3{
   padding-top: 0px;
   min-height: 200px;
   font-size: 18px;
-  width:500px;
+  width: 400px;
+  margin-bottom: 10%;
 }
 
 
   
   
   @media screen and (max-width:600px){
+    .flexbox-container{
+      padding: 10px;  
+      height:800px;
+  }
       .flexbox-item-1{
           order: 1;
           font-size: 24px;
@@ -491,9 +498,7 @@ body {
     padding:20px;
     min-height: 150px;
     }
-    .flexbox-container{
-        padding: 10px;  
-    }
+    
       }
 
 
@@ -633,16 +638,48 @@ body {
   }
   @media only screen and (max-width: 600px) {
     #articleFlex {
+      padding: 10px;   
+      height: 1500px;
       display: flex;
       flex-direction: column;
+      margin: 0 1%;
       /*grid-template-rows: 300px 300px;
       grid-template-columns: 1fr;
       grid-template-areas:
       "categoryGrid1"
       "categoryGrid2";*/
     }
+    #headline {
+      position: static;
+      margin: 20px auto;
+    }
     #getButton {
       position: static;
       margin: auto;
+    }
+  
+    #categoryGrid1 {
+      order: 1;
+      display: grid;
+      grid-template-rows: 100px 200px 200px 100px 100px 100px;
+      grid-template-columns: 550px;
+      grid-template-areas:
+        "desks1"
+        "patio1"
+        "patio1"
+        "bookcases1" 
+        "couches1";   
+    }
+    #categoryGrid2 {
+      order: 2;
+      display: grid;
+      grid-template-rows: 100px 200px 200px 100px 100px 100px;
+      grid-template-columns: 550px;
+      grid-template-areas:
+        "desks2"
+        "patio2"
+        "patio2"
+        "bookcases2" 
+        "couches2";   
     }
   }
