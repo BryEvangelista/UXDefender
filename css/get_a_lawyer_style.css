@@ -89,7 +89,7 @@ header {
   justify-content: center;
   display: flex;
   background-color: black;
-  padding-left: 900px;
+  padding-left: 500px;
   padding-bottom: 40px;
   }
 .space2 {
@@ -108,7 +108,7 @@ header {
   font-size: 24pt;
   font-weight: bold;
   height: 100px;
-  width: 2500px;
+  width: 920px;
   padding-top: 40px;
   padding-bottom: 300px;
   border-bottom-style: solid; 
@@ -128,10 +128,10 @@ header {
   .text2 {
   display: flex;
   font-family: 'Open Sans', sans-serif;
-  font-size: 24pt;
+  font-size: 18pt;
   justify-content: left;
   height: 100px;
-  width: 2300px;
+  width: 920px;
   padding-bottom: 160px;
   margin: auto;
   }
@@ -141,7 +141,7 @@ header {
   font-size: 24pt;
   justify-content: left;
   height: 100px;
-  width: 2300px;
+  width: 920px;
   padding-bottom: 160px;
   margin: auto;
   }
