@@ -89,7 +89,7 @@ header {
   justify-content: center;
   display: flex;
   background-color: black;
-  padding-left: 900px;
+  padding-left: 500px;
   padding-bottom: 40px;
   }
 .space2 {
@@ -141,7 +141,7 @@ header {
   font-size: 24pt;
   justify-content: left;
   height: 100px;
-  width: 2300px;
+  width: 920px;
   padding-bottom: 160px;
   margin: auto;
   }
