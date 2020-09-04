@@ -420,7 +420,19 @@ body {
     margin: 0px 0px;
     color: #636364;
   }
-  /*#footer {
+
+.bodyHeadings { 
+  padding: 30px 0px 0px 0px; 
+}
+
+.borderLine { 
+  margin: 0 40%; 
+  border-bottom: 3px solid tan; 
+  padding: 30px 0; 
+}
+  
+
+/*#footer {
     background-color: black;
     height: 500px;
   }*/
