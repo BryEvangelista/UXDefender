@@ -18,12 +18,14 @@ header {
   align-items: center;
   padding: 10px 5%;
   background-color: #000000;
+  
 }
 .logo {
+  background-color: #000000;
   cursor: pointer;
   margin-right: auto;
-  background-color: #000000;
 }
+
 .nav__links {
   list-style: none;
   background-color: #000000;
