@@ -5,14 +5,5 @@
 			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
 			  crossorigin="anonymous"></script>
 
-<script>
-$(document).ready(function(){
 
-$(".flexbox-item-1").on("click", function() {
-effect( "shake", {times:4}, 1000 );
-
-});
-
-});
-</script>
 
