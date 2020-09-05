@@ -332,7 +332,69 @@ justify-content: center;
       "left-list email-list "
       "bottom-list social-media-bar"
   }
-
+        #Youtube:hover
+        {
+animation: shake 2s infinite linear;
+        }
+        #Facebook:hover
+        {
+animation: shake 2s infinite linear;
+        }
+        #Twitter:hover
+        {
+animation: shake 2s infinite linear;
+        }
+        #Instagram:hover
+        {
+animation: shake 2s infinite linear;
+        }
+@keyframes shake
+{
+  0%
+ {
+     transform: translate(5px,5px);
+ }
+  10%
+ {
+     transform: translate(-5px,-5px);
+ }
+    20%
+   {
+       transform: translate(5px,5px);
+   }
+    30%
+   {
+       transform: translate(-5px,-5px);
+   }
+    40%
+   {
+       transform: translate(5px,5px);
+   }
+    50%
+   {
+       transform: translate(-5px,-5px);
+   }
+    60%
+   {
+       transform: translate(5px,5px);
+   }
+    70%
+   {
+       transform: translate(-5px,-5px);
+   }
+    80%
+   {
+       transform: translate(5px,5px);
+   }
+    90%
+   {
+       transform: translate(-5px,-5px);
+   }
+    100%
+   {
+       transform: translate(5px,5px);
+   }
+}
 
 @media only screen and (max-width: 1000px) {
   #navigation {
